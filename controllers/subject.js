@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Subject = mongoose.model('Subject');
 
-//read methods
+//Listar todas las asignaturas
 exports.listAllSubject = function(req, res) {
 
     Subject.find().populate('studentId').exec(function (err, subject) {
@@ -11,6 +11,7 @@ exports.listAllSubject = function(req, res) {
     })
 };
 
+
 exports.findByName = function(req, res) {
     Subject.find({name:req.params.subjectName}).populate('studentId').exec( function(err, subject) {
         if (err)
@@ -18,6 +19,7 @@ exports.findByName = function(req, res) {
         res.json(subject);
     });
 };
+
 
 exports.findByQuatri = function(req, res) {
     Subject.find({quatri:req.params.subjectName}).populate('studentId').exec( function(err, subject) {
@@ -27,6 +29,7 @@ exports.findByQuatri = function(req, res) {
     });
 };
 
+//
 exports.findByStudies = function(req, res) {
     Subject.find({studies:req.params.subjectName}).populate('studentId').exec( function(err, subject) {
         if (err)

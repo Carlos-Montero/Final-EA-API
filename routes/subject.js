@@ -6,11 +6,11 @@ var subject = require('../controllers/subject');
 
 
 //GET REQUESTS
-//get all the users
+//get de todas las asignaturas
 router.get('/api/todos', subject.listAllSubject);
 
 //POST REQUESTS
-//insert user
+//insert asignatura
 router.post('/api/', subject.insertSubject);
 
 //UPDATE REQUESTS
@@ -22,7 +22,7 @@ router.post('/api/:subjectId', subject.updateSubject);
 router.post('/api/deleteStudentSubject/:subjectId', subject.updateDeleteSubject);
 
 //DELETE REQUESTS
-//delete user by id
+//Borrar asignatura por ID
 router.delete('/api/:subjectId', subject.deleteSubject);
 
 //GET REQUESTS

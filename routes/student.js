@@ -6,23 +6,23 @@ var student = require('../controllers/student');
 
 
 //GET REQUESTS
-//get all the user
+//get de todos los estudiantes
 router.get('/api/todos',student.listAllStudent);
 
 //POST REQUESTS
-//insert user
+//insertar estudiante
 router.post('/api/', student.insertStudent);
 
 //DELETE REQUESTS
-//delete user by id
+//borrar estudiante por id
 router.delete('/api/:studentId',student.deleteStudent);
 
 //UPDATE REQUESTS
-//update user by id
+//actualizar estudiante por id
 router.post('/api/edit/:studentId', student.updateStudent);
 
 //GET REQUESTS
-//get students
+//buscar estudiante por nombre
 router.get('/api/:studentName',student.findByName);
 
 module.exports=router;

@@ -45,7 +45,7 @@ app.use('/student', studentRoutes);
 app.use('/subject', subjectRoutes);
 
 //conect the database
-mongoose.connect('mongodb://localhost:27017/examen',  { useMongoClient: true });
+mongoose.connect('mongodb://localhost:27017/minimo1_final',  { useMongoClient: true });
 console.log("Database connected");
 
 //start server

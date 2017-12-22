@@ -11,7 +11,7 @@ exports.listAllSubject = function(req, res) {
     })
 };
 
-
+//buscar asignatura por nombre
 exports.findByName = function(req, res) {
     Subject.find({name:req.params.subjectName}).populate('studentId').exec( function(err, subject) {
         if (err)
@@ -20,7 +20,7 @@ exports.findByName = function(req, res) {
     });
 };
 
-
+//buscar asignatura por cuatri
 exports.findByQuatri = function(req, res) {
     Subject.find({quatri:req.params.subjectName}).populate('studentId').exec( function(err, subject) {
         if (err)
@@ -29,7 +29,7 @@ exports.findByQuatri = function(req, res) {
     });
 };
 
-//
+//buscar por titulación
 exports.findByStudies = function(req, res) {
     Subject.find({studies:req.params.subjectName}).populate('studentId').exec( function(err, subject) {
         if (err)

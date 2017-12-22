@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EAGrup4/Server.git"
+    "url": "git+https://github.com/EAGrup2/Server.git"
   },
   "author": "Grup04",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EAGrup4/Server/issues"
+    "url": "https://github.com/EAGrup2/Server/issues"
   },
-  "homepage": "https://github.com/EAGrup4/Server#readme",
+  "homepage": "https://github.com/EAGrup2/Server#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
